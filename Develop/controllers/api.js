@@ -13,17 +13,26 @@ router.post("/workouts", ({ body }, res) => {
 
 
 
-router.put("/workouts/:id", ({ body, params}, res) => {
-    // code here
-  
-});
+  router.put("/workouts/:id", ({ body, params }, res) => {
+    //update workout with id here
+    console.log(body);
+    const workout = body;
+    Workout.findByIdAndUpdate(
+      { _id: `${params.id}` },
+      { $push: { exercises: workout } }
+    )
+    .then((data) => {
+        res.json(data);
+    })
+    .catch((err) => {
+        res.json(err);
+    })
+  });
 
 
 
 
 router.get("/workouts", (req, res) => {
-    // code here
-
     Workout.find({})
     .then(dbWorkout => {
         console.log(dbWorkout);
