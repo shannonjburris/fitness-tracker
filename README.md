@@ -3,7 +3,8 @@ This workout tracker allows users to view, create and track daily workouts. It a
 <br>
 This app requires a Mongo database with a Mongoose schema and handle routes with Express.
 <br>
-<h4>Deployed App:</h4>
-[Heoku](https://stormy-springs-34661.herokuapp.com/?id=611c6118655ac00016def4dd)
+Deployed App:
+<br>
+[Heroku](https://stormy-springs-34661.herokuapp.com/?id=611c6118655ac00016def4dd)
 <br>
 ![screenshot](https://raw.githubusercontent.com/shannonjburris/fitness-tracker/main/public/assets/Screen%20Shot%202021-08-17%20at%208.45.39%20PM.png)
